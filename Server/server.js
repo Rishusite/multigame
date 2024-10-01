@@ -1,5 +1,5 @@
-const {dotenv} = require("dotenv");
-dotenv.config();
+require("dotenv").config();
+const port = process.env.PORT || 3000;
 const { createServer } = require("http");
 const { Server } = require("socket.io");
 
@@ -83,5 +83,5 @@ io.on("connection", (socket) => {
     }
   });
 });
-const port = process.env.PORT || 3000;
+
 httpServer.listen(port);
