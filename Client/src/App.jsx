@@ -128,7 +128,7 @@ const App = () => {
     const username = result.value;
     setPlayerName(username);
 
-    const newSocket = io("https://multigame-one.vercel.app/", {
+    const newSocket = io("https://multigame-3-n0fx.onrender.com/", {
       autoConnect: true,
     });
 
